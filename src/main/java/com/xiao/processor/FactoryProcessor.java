@@ -1,7 +1,5 @@
 package com.xiao.processor;
 
-import com.google.auto.service.AutoService;
-
 import javax.annotation.processing.*;
 import javax.lang.model.element.*;
 import javax.lang.model.type.TypeKind;
@@ -15,7 +13,7 @@ import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
 
-@AutoService(Processor.class)
+/*@AutoService(Processor.class)*/
 public class FactoryProcessor extends AbstractProcessor {
 
     private Types typeUtils;

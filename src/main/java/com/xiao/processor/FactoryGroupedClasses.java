@@ -1,6 +1,5 @@
 package com.xiao.processor;
 
-import com.squareup.javawriter.JavaWriter;
 
 import javax.annotation.processing.Filer;
 import javax.lang.model.element.Modifier;
@@ -40,7 +39,7 @@ public class FactoryGroupedClasses {
 
         JavaFileObject jfo = filer.createSourceFile(qualifiedClassName + SUFFIX);
         Writer writer = jfo.openWriter();
-        JavaWriter jw = new JavaWriter(writer);
+        /*JavaWriter jw = new JavaWriter(writer);
 
         // Write package
         PackageElement pkg = elementUtils.getPackageOf(superClassName);
@@ -71,6 +70,6 @@ public class FactoryGroupedClasses {
 
         jw.endType();
 
-        jw.close();
+        jw.close();*/
     }
 }
